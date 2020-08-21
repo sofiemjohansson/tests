@@ -1,0 +1,64 @@
+package passenworden;
+
+import java.io.InputStream;
+import java.security.PublicKey;
+import java.util.Scanner;
+
+import com.sun.org.apache.xpath.internal.operations.Equals;
+
+
+
+public class passenworden {
+
+
+	public static void main(String[] args) {
+		
+		Scanner myScanner = new Scanner (System.in);
+		String passwordInput;
+		
+		System.out.print("Type your password");// Första förfrågan om lösenord//
+		passwordInput =myScanner.nextLine();
+		
+		if (passwordInput.equals ("LEMMY")) { // Rätt lösenord 
+			myScanner.nextLine();
+			System.out.println("Correct password!"); // om rätt lösenord skrivs så kommer detta fram
+			
+			
+		} 
+		else 
+
+	
+		{
+		
+			
+			System.out.println("Wrong password "); // Skrivs fel lösenord så visas detta
+			myScanner.nextLine();
+			
+		
+			
+			System.out.println ("Wrong password"); // Skrivs fel lösenord så visas detta
+			myScanner.nextLine();
+			System.out.println ("Last chance"); // detta visar att det är sista chansen att skriva ett lösenordsförsök
+		
+		
+			myScanner.nextLine();
+			
+			
+		
+			System.out.println ("Wrong password"); 
+			System.out.println ("Locked");  // Sista gången låses det.
+			myScanner.nextLine();
+			
+			
+		}}
+		}
+			
+			
+			
+					
+			
+				
+			
+	
+
+
